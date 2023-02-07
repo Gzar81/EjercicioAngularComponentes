@@ -6,5 +6,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./ng-if.component.css']
 })
 export class NgIfComponent {
+  mostrar: boolean = false;
+
+  cambiarEstado(){
+    this.mostrar = !this.mostrar
+  }
 
 }
