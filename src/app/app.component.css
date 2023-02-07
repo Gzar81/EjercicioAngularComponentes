@@ -1,0 +1,53 @@
+*{
+    box-sizing: border-box;
+}
+
+main {
+    background-color: blanchedalmond;
+}
+
+.allContainer {
+    display: flex;    
+    flex-direction: column;
+    height: 100%;
+}
+.wrapper {
+    display: flex;    
+    flex-direction: column;
+    background-color: gray;
+    align-items: center;
+    
+    
+}
+
+h1 {
+    display: flex;    
+    width: 100%;
+    justify-content: center;
+    background-color: darkcyan;
+}
+
+footer{
+    background-color: black;
+    color: white;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.container{
+    display: flex;    
+    max-width: 1004px;
+    margin: 20px auto;
+    height: 100%;
+}
+
+.Outtext{
+    display: flex;
+    background-color: rgb(188, 179, 179);
+    width: 100%;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 5rem;
+}

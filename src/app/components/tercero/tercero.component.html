@@ -1,0 +1,22 @@
+<div>
+<div>
+    <label for="nombre">Introduce tu nombre </label>
+    <input type="text" id="nombre" [(ngModel)]="nombre">
+    
+</div>
+<div>
+    <label for="apellido">Introduce tu apellido </label>
+    <input type="text" id="apellido" [(ngModel)]="apellido"><!--es un evento que es un  property binding mezclado con un event binding[(ngModel)] lo podemos usar gracias a que hemos importado la librería FormsModule-->
+</div>
+<p>{{nombre}} {{apellido}}</p>
+<button (click)="guardar()">Guardar</button>
+</div>
+<section ></section>
+
+<!-- <div>
+    <article *ngFor="Let usuario of arrPersonas">
+        <h3></h3>
+        <p>Nombre: [innerHtml]="arrPersonas.nombre"</p>
+        <p>Apellidos: [innerHtml]="arrPersonas.apellido</p>
+    </article>
+</div> -->

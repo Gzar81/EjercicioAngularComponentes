@@ -1,0 +1,19 @@
+<div class="caja">
+    <p>{{numero}}</p>
+    <!--Event binding html->ts -->
+    <button (click)="add()">Añadir</button>
+    <button (click)="remove()">Quitar</button>
+</div>
+<hr>
+<input type="color" (input)="cargarColor($event)">
+<div class="cuadrado" [style]="color"></div><!-- esto es property binding -->
+<!-- tb se puede hacer así <div class="cuadrado" [style]="'background-color:' + color"></div> quitando en el ts la referencia al backgound-color-->
+
+<select (change)="cargarCiudad($event)"> <!--Siempre que el elemento html me reporte información necesaria para hacer mi funcionalidad, le tengo que pasar el $event-->
+    <option value="">Selecciona una ciudad</option>
+    <option value="madrid">Madrid</option>
+    <option value="roma">Roma</option>
+    <option value="new york">New York</option>
+    <option value="paris">París</option>
+</select>
+<p>{{frase}}</p>

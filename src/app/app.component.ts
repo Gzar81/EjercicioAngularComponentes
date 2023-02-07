@@ -6,5 +6,14 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'componentes';
+  dato: string = "";
+  listaProductos: string[] = [];
+  nombre: string = "Julia";
+  constructor() {
+    this.listaProductos = ['Ordenador', 'Ratón', 'Teclado', 'Disco duro']
+  }
+
+  mostrarTexto($event:string){
+    this.dato = $event;
+  }
 }

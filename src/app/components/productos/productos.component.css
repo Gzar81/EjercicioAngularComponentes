@@ -1,0 +1,16 @@
+* {
+    box-sizing: border-box;
+}
+
+.inputContainer{
+    display: flex;
+    justify-content: center;
+}
+
+.textintro {
+    display: flex;
+    justify-content: center;
+    width: max-content;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+}
