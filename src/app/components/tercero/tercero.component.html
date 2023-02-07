@@ -12,13 +12,13 @@
 <button (click)="guardar()">Guardar</button>
 </div>
 <section ></section>
-
+<h1 class="title">ÚLTIMAS NOVEDADES</h1>
 <div class="article-container">
     <article *ngFor="let persona of arrPersonas">
         <div class="usuario">
         <h3>Usuario</h3>
-        <p>Nombre: {{persona.nombre}}</p>
-        <p>Apellidos: {{persona.apellido}}</p>
+        <p>Nombre: {{persona.name}}</p>
+        <p>Apellidos: {{persona.surname}}</p>
         </div>
         
     </article>

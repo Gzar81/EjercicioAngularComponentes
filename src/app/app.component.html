@@ -1,26 +1,28 @@
 <div class="allContainer">
   <app-header></app-header>
   <main>
-    <app-primero></app-primero>
-    <app-segundo></app-segundo>
-    <app-tercero></app-tercero>
+    <!-- <app-primero></app-primero>
+    <app-segundo></app-segundo> -->
+    
     <div class="wrapper">
-      <div>
+      <!-- <div>
         <app-eventos></app-eventos>
-      </div>
+      </div> -->
       <div class="container">
-        <app-main></app-main>
+        <app-tercero></app-tercero>
+        <app-galeria></app-galeria>
+        <!-- <app-main></app-main> -->
       </div>
-      <div>
+      <!-- <div>
         <h1>Imputs y Outputs</h1>
-      </div>
-      <app-productos [productos]="listaProductos" [nombre]="nombre" (envioTexto)="mostrarTexto($event)"></app-productos>
-      <hr>
-      <div class="Outtext">{{dato}}</div>
+      </div> -->
+      <!-- <app-productos [productos]="listaProductos" [nombre]="nombre" (envioTexto)="mostrarTexto($event)"></app-productos> -->
+      <!-- <hr> -->
+      <!-- <div class="Outtext">{{dato}}</div> -->
     </div>
 
   </main>
   <footer>
-    Copyrigth @ 2022
+    Copyright @ 2023
   </footer>
 </div>

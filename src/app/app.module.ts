@@ -10,6 +10,7 @@ import { ProductosComponent } from './components/productos/productos.component';
 import { PrimeroComponent } from './components/primero/primero.component';
 import { SegundoComponent } from './components/segundo/segundo.component';
 import { TerceroComponent } from './components/tercero/tercero.component';
+import { GaleriaComponent } from './components/galeria/galeria.component';
 
 
 @NgModule({
@@ -22,6 +23,7 @@ import { TerceroComponent } from './components/tercero/tercero.component';
     PrimeroComponent,
     SegundoComponent,
     TerceroComponent,
+    GaleriaComponent,
     
   ],
   imports: [
