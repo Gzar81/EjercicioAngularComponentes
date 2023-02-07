@@ -22,9 +22,13 @@ export class TerceroComponent {
   this.apellido = "";
   }
 
-  /*constructor(){
-    this.arrPersonas = new 
-  }*/
+  constructor() { 
+    this.arrPersonas = [
+      {nombre: "Julia", apellido: "Perez"},
+      {nombre: "Juan", apellido: "Gomez"}
+      
+    ]
+  }
 
   
 
