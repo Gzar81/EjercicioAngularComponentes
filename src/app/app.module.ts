@@ -13,6 +13,7 @@ import { TerceroComponent } from './components/tercero/tercero.component';
 import { GaleriaComponent } from './components/galeria/galeria.component';
 import { NgIfComponent } from './components/ng-if/ng-if.component';
 import { NgStyleComponent } from './components/ng-style/ng-style.component';
+import { NgClassComponent } from './components/ng-class/ng-class.component';
 
 
 @NgModule({
@@ -28,6 +29,7 @@ import { NgStyleComponent } from './components/ng-style/ng-style.component';
     GaleriaComponent,
     NgIfComponent,
     NgStyleComponent,
+    NgClassComponent,
     
   ],
   imports: [

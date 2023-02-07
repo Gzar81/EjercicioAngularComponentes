@@ -1,0 +1,22 @@
+.textoRojo{
+    color: red;
+    
+}
+
+.textoVerde{
+    color: green;
+}
+
+.fondoAzul{
+    background-color: blue;
+    padding: 10px;
+    transition: 1s;
+    margin-right: 200px;
+}
+
+.fondoRojo{
+    background-color: tomato;
+    margin-left: 200px;
+    padding: 10px;
+    transition: 1s;
+}
