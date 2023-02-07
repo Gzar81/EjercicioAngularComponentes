@@ -42,3 +42,13 @@
     padding: 10px;
     margin: auto;
 }
+
+.darkTeme{
+    background-color: rgba(25, 20, 20, 0.33);
+    color: yellow;
+}
+
+.lightTeme{
+    background-color: rgba(255, 255, 0, 0.348);
+    font-weight: bold;
+}

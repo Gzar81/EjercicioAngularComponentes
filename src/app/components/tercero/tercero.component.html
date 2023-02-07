@@ -14,11 +14,12 @@
 <section ></section>
 <h1 class="title">ÚLTIMAS NOVEDADES</h1>
 <div class="article-container">
-    <article *ngFor="let persona of arrPersonas">
-        <div class="usuario">
+    <article *ngFor="let persona of arrPersonas; let i = index; let par = even; let impar = odd">
+        <div class="usuario" [ngClass]="{'darkTeme': impar, 'lightTeme': par}">
         <h3>Usuario</h3>
         <p>Nombre: {{persona.name}}</p>
         <p>Apellidos: {{persona.surname}}</p>
+        <small>Noticia número: {{i+1}}</small>
         </div>
         
     </article>

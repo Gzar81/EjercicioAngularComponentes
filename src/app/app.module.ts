@@ -11,6 +11,7 @@ import { PrimeroComponent } from './components/primero/primero.component';
 import { SegundoComponent } from './components/segundo/segundo.component';
 import { TerceroComponent } from './components/tercero/tercero.component';
 import { GaleriaComponent } from './components/galeria/galeria.component';
+import { NgIfComponent } from './components/ng-if/ng-if.component';
 
 
 @NgModule({
@@ -24,6 +25,7 @@ import { GaleriaComponent } from './components/galeria/galeria.component';
     SegundoComponent,
     TerceroComponent,
     GaleriaComponent,
+    NgIfComponent,
     
   ],
   imports: [
