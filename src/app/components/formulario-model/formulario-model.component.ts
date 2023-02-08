@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
+import { Usuario } from 'src/app/interfaces/usuario.interface';
 
 @Component({
   selector: 'app-formulario-model',
@@ -27,19 +28,18 @@ export class FormularioModelComponent {
     }, [])
 
     this.arrUsuarios = [
-      {name: "Julia", email: "Julia@gmail.com", age: "18"},
-      {name: "Juan", email: "JuanGomez@hotmail.com", age: "37"}
+      {name: "Julia", email: "Julia@gmail.com", age: 18},
+      {name: "Juan", email: "JuanGomez@hotmail.com", age: 37}
     ]
 
   }
-  arrUsuarios: any[] = [];
+  arrUsuarios: Usuario[] = [];
 
 
   recogerDatosForm(){
-    console.log(this.miFormulario.value)
     let usuario = this.miFormulario.value;
     this.arrUsuarios.push(usuario)
-    console.log(this.arrUsuarios)        
+         
   }
   
 }
