@@ -25,11 +25,21 @@ export class FormularioModelComponent {
         Validators.maxLength(3)
       ])
     }, [])
+
+    this.arrUsuarios = [
+      {name: "Julia", email: "Julia@gmail.com", age: "18"},
+      {name: "Juan", email: "JuanGomez@hotmail.com", age: "37"}
+    ]
+
   }
+  arrUsuarios: any[] = [];
+
 
   recogerDatosForm(){
     console.log(this.miFormulario.value)
-    
+    let usuario = this.miFormulario.value;
+    this.arrUsuarios.push(usuario)
+    console.log(this.arrUsuarios)        
   }
-
+  
 }
