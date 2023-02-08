@@ -1,0 +1,14 @@
+.contenido{
+    max-width: 100px;
+    margin: 0 auto;
+}
+
+label input{
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.contenido{
+    display: flex;
+    justify-content: flex-end;
+}
