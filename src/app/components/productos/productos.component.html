@@ -7,3 +7,29 @@
     <label for="textintro">Introduzca el texto que desea ampliar</label>
     <input type="text" class="textintro" (input)="cargarTexto($event)">
 </div>
+
+<!-- En el imput de texto se produce un (evento) de tipo input que inicia una función que recoge la información en $event -->
+
+<!-- En el ts declaramos   @Output() enviotexto: EventEmmiter<string> -->
+    
+<!-- Iniciamos en el        constructor(){
+                            this.envioTexto = new EventEmmiter;
+} -->
+                    <!-- cararTexto($event:any){
+                        let texto = $event.target.value;
+                        this.envioTexto.emit(texto);
+                    } -->
+
+<!-- INPUTS Y OUTPUTS -->
+
+<!-- En el componente principal app.component.ts declaramos:    dato: string = "";
+
+                                                                mostrarTexto($event: string){
+                                                                    this.dato = $event;
+                                                                }
+-->
+<!-- <app-productos [productos]="listaProductos" [nombre]="nombre" (envioTexto)="mostrarTexto($event)"></app-productos> -->
+
+<!-- <div class="Outtext">{{dato}}</div> -->
+
+<!-- Asi es como un evento de (input) que se produce en el hijo lo emitimos en el padre -->

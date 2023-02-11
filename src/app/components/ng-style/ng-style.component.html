@@ -2,4 +2,13 @@
 <input type="color" (change)="cambiarColor($event)">
 <p [ngStyle]="{'background-color': color, 'padding': '10px', 'font-size': size +'px'}">Este es el párrafo de prueba</p>
 
-<!--nhStyle me permite poner valores de css aplicables y modificables a través de propiedades de clase y a través de que el evento de usuario pueda permotirme cambiar esas propiedades-->
+<!--[ngStyle] me permite poner valores de css aplicables y modificables a través de propiedades de clase y a través de que el evento de usuario pueda permitirme cambiar esas propiedades-->
+<!-- las propiedades css van {entre} porque es código css, y en css siempre se escribe entre corchetes-->
+
+<!-- DIRECTIVAS DE CLASE -->
+
+<!-- [ngStyle]="{'propiedad': valor,... }" -->
+
+<!-- [ngClass]="['clase', 'clase']" -->
+<!-- [ngClass]="variable" -->
+<!-- [ngClass]="{'clase': propiedad declarada en el ts}" -->
