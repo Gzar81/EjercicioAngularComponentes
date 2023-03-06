@@ -4,8 +4,12 @@ header{
     background-color: black;
     box-shadow: 1px 1px 10px #444;
     padding: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-stretch: extra-expanded;
+    font-size: large;
     color: yellow;
-    position: fixed;
+    /* position: fixed; */
     width: 100%;
 
 }

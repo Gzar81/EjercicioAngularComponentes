@@ -1,0 +1,32 @@
+<!-- <p>{{miFormulario.valid}}</p> sirve para comprobar si el formulario es válido, es decir, si funciona correctamente -->
+<h1>Formulario Model</h1>
+<hr>
+<div class="contenido">
+    <form [formGroup]="miFormulario" (ngSubmit)="recogerDatosForm()">
+        <div>
+            <label for="name">Nombre</label>
+            <input type="text" formControlName="name">
+        </div>
+        <div>
+            <label for="email">Email</label>
+            <input type="email" formControlName="email">
+        </div>
+        <div>
+            <label for="age">Edad</label>
+            <input type="text" formControlName="age">
+        </div>
+        <input type="submit" value="Enviar" [disabled]="!miFormulario.valid">
+    </form>
+</div>
+<div class="article-container">
+    <article *ngFor="let usuario of arrUsuarios; let i = index; let par = even; let impar = odd">
+        <div class="usuario" [ngClass]="{'darkTeme': impar, 'lightTeme': par}">
+        <h3>Usuario</h3>
+        <p>Nombre: {{usuario.name}}</p>
+        <p>Email: {{usuario.email}}</p>
+        <p>Edad: {{usuario.age}}</p>
+        <small>Noticia número: {{i+1}}</small>
+        </div>
+        
+    </article>
+</div>

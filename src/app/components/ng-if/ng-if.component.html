@@ -1,0 +1,15 @@
+<button (click)="cambiarEstado()">Cambiar</button>
+<p *ngIf="mostrar">1 - Aqui está el primer párrafo</p>
+
+<p *ngIf="!mostrar">2 - Soy el segundo párrafo</p>
+
+<!--La siguiente es otra forma de hacerlo-->
+
+<p *ngIf="mostrar; else bloqueElse">3 - Aqui está el tercer párrafo</p>
+
+<ng-template #bloqueElse>
+    <p *ngIf="!mostrar">4 - Soy el cuarto párrafo</p>
+</ng-template>
+<!--Esta estructura me permite ocultar contenido; mostrar o no un contenido en función de una variable; condicionar estados de mi componente a un valor concreto-->
+
+<!-- <div *ngIf="una declaración, propiedad, una variable, que si es cierta">creará el div con su contenido-->
